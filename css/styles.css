@@ -43,18 +43,24 @@ header h1 {
 #names {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 2rem;
     padding: 1rem;
     width: 30%;
 }
 #names div {
     background: var(--second-color);
-    border: 2px solid var(--first-color);
+    /* border: 2px solid var(--first-color); */
+    box-shadow: 3px 3px 15px var(--first-color);
     border-radius: 2rem;
     color: #FFF;
+    cursor: pointer;
     font-size: 3rem;
     text-align: center;
+    transition: all .5s ease;
     padding: 1.5rem 1rem;
+}
+#names div:hover {
+    background-color: var(--text);
 }
 
 /* DATOS */
